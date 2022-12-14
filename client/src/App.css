@@ -1,0 +1,894 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App {
+  text-align: center;
+}
+
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
+	height: 100%;
+	/*Image only BG fallback*/
+	
+	/*background = gradient + image pattern combo*/
+	background: 
+		linear-gradient(rgba(75, 72, 69, 0.6), rgba(0, 82, 213, 0.927));
+}
+
+body {
+	font-family: Minecraft, sans-serif;
+}
+/*form styles*/
+#msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+  margin-top: 100px;
+  
+}
+#msform fieldset {
+  list-style-type: none;
+  margin-top: 0;
+  display: flexbox;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #947754, #a58a58, #ffffff, #838d5a,#c6926d);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #ffffff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+  background-image: linear-gradient(-45deg, #f3f3f3, #959593, #ffffff, #8c8c8c,#0e0e0e);
+  animation: 12s myGradient infinite;
+  animation: 3s myWorld ease linear;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: Minecraft, sans-serif;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+header{
+  font-size: xx-large;
+  margin: 25px 0px;
+}
+
+.form-fields{
+  color:rgb(136, 135, 135);
+  display: flexbox;
+  justify-content: space-between;
+  width: 1000px;
+  margin: auto ;
+  border-radius: 30px;
+  padding:15px;
+  margin-top: 200px;
+  background-color: rgb(236, 236, 236);
+  list-style-type: none;
+  display: flexbox;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #4a0707, #05154d, #020202, #014f01,#4b0245, rgb(97, 97, 4));
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #ffffff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+
+.form-fields>input{
+  border-radius: 30px;
+}
+
+.submit-input, button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  margin: auto ;
+  height:100vh;
+  overflow: auto;
+}
+
+table, th, td {
+  border-color: black;
+  border: 1px solid;
+  font-family: 'Minecraft', sans-serif;
+  font: weight 100px;;
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding: 10px;
+
+}
+.table2{
+  border-color: black;
+  border: 1px solid;
+  margin-top: 200px;
+}
+
+table{
+  overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 500px;
+  
+  margin: auto;
+  display: flexbox;
+  margin-top: 200px;
+  background-color: rgb(179, 147, 108);
+  list-style-type: none;
+  display: flexbox;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #947754, #a58a58, #ffffff, #838d5a,#c6926d);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #ffffff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.card2 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  margin: auto 0px;
+  text-align: center;
+  margin: auto;
+  background-color: bisque;
+  list-style-type: none;
+  display: flexbox;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #000000, #ededed, #000000, #f0f0f0,#3c3c3c);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #ffffff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+  font-family: 'Minecraft', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.fighter{
+	color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Minecraft', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-top: 20px;
+  cursor: pointer;
+  list-style-type: none;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #595ee1, #0000ff, #00e1ff, #2b00ff,#ffffff);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #1900ff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+.fighter1{
+	color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Minecraft', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-top: 20px;
+  cursor: pointer;
+  list-style-type: none;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #e16d59, #ff8c00, #fbfbfb, #ff0084,#ffffff);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #ff0000;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+.fighter2{
+	color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Minecraft', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-top: 20px;
+  cursor: pointer;
+  list-style-type: none;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #00f8a1, #01832a, #ffffff, #00ffbb,#ffffff);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #00ff33;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+.fighter3{
+	color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Minecraft', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-top: 20px;
+  cursor: pointer;
+  list-style-type: none;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #15f800, #830101, #ffffff, #00e1ff,#ffffff);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #efefef;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+.fighter4{
+	color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Minecraft', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-top: 20px;
+  cursor: pointer;
+  list-style-type: none;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #7e0000, #00047b, #000000, #690000,#010196);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #efefef;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+
+
+
+/* Navbar */
+/*CSS page*/
+/*New Css Project*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*
+  Css code writen here...
+*/
+/*Body section...@*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  transition: 3s;
+
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  display: flex;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #ff5959, #ff4040, #ff0d6e, #ff8033,#d74177);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #f20202;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+}
+.ul2 {
+  list-style-type: none;
+  margin-top: 0;
+  display: flex;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #595ee1, #0000ff, #00e1ff, #2b00ff,#ffffff);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #1900ff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+
+}
+.ul3{
+  list-style-type: none;
+  margin-top: 0;
+  display: flex;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #0d9700, #38c700, #0dffb2, #d6ff33,#fafdfd, green, rgb(181, 245, 219));
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #00ff15;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+
+}
+.ul4{
+  list-style-type: none;
+  margin-top: 0;
+  display: flex;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #5b009b, #a300ef, #2f00ff, #0b005c,#ffffff);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #7524e7;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+
+}
+.ul5 {
+  list-style-type: none;
+  margin-top: 0;
+  display: flex;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #ffffff, #acacac, #4d4e4e, #f5f3fc,#c0c0c0a2);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #ffffff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+.ul6{
+  list-style-type: none;
+  margin-top: 0;
+  display: flexbox;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #947754, #a58a58, #ffffff, #838d5a,#c6926d);
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #ffffff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+.ul7{
+  list-style-type: none;
+  margin-top: 0;
+  display: flexbox;
+  padding: 18px 0;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #fdfdfd, #969696, #ffffff, #585858,#c1bfbd, rgb(255, 255, 255));
+  animation: 12s myGradient infinite;
+  border-radius: 0px;
+  box-shadow: 3px 3px 20px #ffffff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  justify-content: space-between;
+  animation: 3s myWorld ease linear;
+}
+.ul8 {
+    list-style-type: none;
+    margin-top: 0;
+    display: flexbox;
+    padding: 18px 0;
+    background-size: 400% 400%;
+    background-image: linear-gradient(-45deg, #fe0707, #26ff00, #ffffff, #0033ff,#ffee00, rgba(218, 0, 251, 0.295));
+    animation: 12s myGradient infinite;
+    border-radius: 0px;
+    box-shadow: 3px 3px 20px #ffffff;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    justify-content: space-between;
+    animation: 3s myWorld ease linear;
+}
+
+
+@keyframes myGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  
+  50%{
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fa-search{
+  transition: 1s;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.active {
+  transition: 1s;
+}
+
+.active1{
+  transition: 1s;
+}
+
+.active2 {
+  transition: 1s;
+}
+
+.active3 {
+  transition: 1s;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 30px 45px;
+  font-family: verdana;
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  
+}
+
+button{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: 'Minecraft', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+button:active {
+  transform: translateY(4px);
+}
+Link{
+  text-decoration: none;
+}
+.titles{
+  font-family: 'Minecraft', sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  margin-top: 150px;
+}
+
+.images{
+  width: 60px;
+  height: 60px;
+  vertical-align:middle;
+  display: flexbox;
+  border-radius: 50px;
+  padding: 5px;
+}
+.images2{
+  width: 100px;
+  height: 100px;
+  vertical-align:middle;
+  display: flexbox;
+  border-radius: 50%;
+}
+
+.leaderboard{
+	margin-top: 70px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  top: 3%;
+  left: 50%;
+}
+
+.fa-search:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+.active3:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+  margin-top: -100px;
+}
+
+.active2:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+.active1:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+.active:hover {
+  color: #fff;
+  animation: 1.5s myFlash linear infinite;
+  text-shadow: 2px 2px 30px #fff;
+  transition: 2s;
+}
+
+@keyframes myFlash {
+  0% {
+    opacity: 1;
+    text-shadow: transparent;
+  }
+  
+  50% {
+    opacity: .1;
+  }
+  
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px #fff;
+  }
+}
+
+.line-w5 {
+  width: 5px;
+  height: 500px;
+  background: tomato;
+  position: absolute;
+  transform: translate(-50%, -30%);
+  top: 50%;
+  left: 40%;
+  border-radius: 30px;
+  background-image: linear-gradient(-45deg, #ff408c, #ff4040, #6666ff);
+  background-size: 400% 400%;
+  animation: 13s myBackground infinite;
+  box-shadow: 2px 2px 10px #ff2e38;
+  transition: 3s;
+}
+
+@keyframes myBackground {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0%;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes myLinear {
+  0%{
+    width: 50px;
+  }
+  
+  100% {
+    width: 250px;
+  }
+}
+
+.flash-GIF {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ff5959;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 15%;
+  left: 10%;
+  box-shadow: 2px 2px 20px #d4267d;
+  animation: 1.6s myFlash linear infinite;
+}
+
+@keyframes myFlash{
+  0% {
+    opacity: 1;
+  }
+  
+  50%{
+    opacity: .1;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+nav {
+  transition: 3s;
+  animation: 3s myAnimation ease linear;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-type {
+  animation: 3s myWorld ease linear;
+}
+
+@keyframes myWorld {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@media(max-width: 767px) {
+  .flash-GIF {
+    display: none;
+  }
+  
+  .line-w5 {
+    display: none;
+  }
+  
+  .navigation {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  
+  .text-content-fluid {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 50%;
+  }
+  
+  ul {
+    padding: 15px 0;
+  }
+  
+  
+  li a {
+    padding: 34px 34px;
+    font-size: 23px;
+    font-weight: lighter;
+  }
+  
+  .radial-cyrcle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: tomato;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    box-shadow: 2px 2px 20px #ff3352;
+    background-image: linear-gradient(to top, #ff2657, #ff3333, #ff5900);
+  }
+}
+
+.text-content-fluid {
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 53%;
+  left: 50%;
+  letter-spacing: 25px;
+  font-size: 50px;
+  font-family: verdana;
+}
+
+
+
+@media(max-width: 767px) {
+  .text-content-fluid {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+  }
+}
+
+
+
+/*Ideal screen pixel 1317px*/
+
+
+
+@keyframes myLineargradient {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 2px 3px 20px #ff1700;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+     box-shadow: none;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+     box-shadow: 2px 3px 20px #ff1700;
+  }
+}
+
+/*top: 71%*/
+
+
+.Active {
+  transition: 2s;
+  margin-top: 1px;
+}
+
